@@ -18,7 +18,7 @@ def text_indentation(text):
     Return:
         the new text
     """
-    if isinstance(text, str):
+    if not isinstance(text, str):
         raise TypeError("text must be a string")
     newText = ""
     speChar = ['.', '?', ':']
