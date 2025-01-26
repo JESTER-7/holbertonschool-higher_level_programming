@@ -13,7 +13,7 @@ class TestMax(unittest.TestCase):
 
     def test_list_of_strings(self):
         stringList = ["i", "am", "Heinsenberg"]  # test with string
-        self.assertEqual(max_integer(stringList), "Heinsenberg")
+        self.assertEqual(max_integer(stringList), "i")
 
 if __name__ == '__main__':
     unittest.main()
