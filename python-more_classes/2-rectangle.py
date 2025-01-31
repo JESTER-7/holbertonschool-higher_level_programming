@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""create the rectangle class"""
+
+
 class Rectangle:
+    """define the rectangle class"""
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -28,7 +32,7 @@ class Rectangle:
         getter method for height
         """
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """
