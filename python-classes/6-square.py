@@ -48,11 +48,10 @@ class Square:
         """
         if self.__size == 0:
             print("")
+        for noDatSquare in range(self.__position[1]):
+            print("")
         for datSquare in range(self.__size):
-            if self.__position[0] != 0:
-                print(" " * (self.__position[0] - 1), "#" * self.__size)
-            else:
-                print("#" * self.__size)
+            print(" " * (self.__position[0] - 1), "#" * self.__size)
 
     def area(self):
         """
