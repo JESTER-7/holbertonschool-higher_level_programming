@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""create the square class"""
+
+
 class Square:
+    """define the square class"""
     def __init__(self, size=0, position=(0, 0)):
         self.__size = size
         self.__position = position
@@ -21,14 +25,14 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    
+
     @property
     def position(self):
         """
         getter method for position
         """
         return self.__position
-    
+
     @position.setter
     def position(self, value):
         """
@@ -45,7 +49,7 @@ class Square:
         if self.__size == 0:
             print("")
         for datSquare in range(self.__size):
-            if self.__position[0] != 0 :
+            if self.__position[0] != 0:
                 print(" " * (self.__position[0] - 1), "#" * self.__size)
             else:
                 print("#" * self.__size)
