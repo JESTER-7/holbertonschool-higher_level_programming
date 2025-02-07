@@ -14,3 +14,13 @@ print(my_list)
 
 >>> print(my_list)
 [1, 4, 2, 3, 5]
+
+>>> negative_list = MyList()
+>>> negative_list.append(-1)
+>>> negative_list.append(-4)
+>>> negative_list.append(-2)
+>>> negative_list.print_sorted()
+[-4, -2, -1]
+
+>>> issubclass(MyList, list)
+True
