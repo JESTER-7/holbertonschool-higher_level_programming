@@ -3,6 +3,10 @@
 
 
 class MyList(list):
-    """define class"""
+    """define a class"""
     def print_sorted(self):
-        print(sorted(self))
+        sort1 = []
+        for i in self:
+            sort1.append(i)
+        sort1.sort()
+        print(sort1)
