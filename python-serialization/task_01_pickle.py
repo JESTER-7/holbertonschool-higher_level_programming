@@ -22,12 +22,13 @@ class CustomObject:
         print("Is Student: {}".format(self.is_student))
 
     def serialize(self, filename):
-        """Serializes the current instance and saves it to a file."""
+        """Serializes the current instance and save it to a file"""
         try:
             with open(filename, 'wb', encoding="utf-8") as file:
                 pickle.dump(self, file)
-        except Exception as e:
+        except (FileNotFoundError, pickle.PickleError, EOFError) as e:
             print("Error serializing object: {}".format(e))
+            return None
 
     @classmethod
     def deserialize(cls, filename):
